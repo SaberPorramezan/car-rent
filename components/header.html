@@ -1,0 +1,57 @@
+<!-- Header Start -->
+<header class="main-header container">
+  <img
+    srcset="
+      /assets/images/Logo@1x.png 1x,
+      /assets/images/Logo@2x.png 2x,
+      /assets/images/Logo@3x.png 3x,
+      /assets/images/Logo@4x.png 4x
+    "
+    src="/assets/images/Logo@1x.png"
+    alt="MORENT"
+    loading="lazy"
+    class="main-header__logo"
+  />
+  <div class="main-header__left">
+    <div class="search-box">
+      <input
+        class="input input--search-box text-overflow-1"
+        type="text"
+        placeholder="Search something here"
+      />
+      <svg class="icon--24 icon--search-box">
+        <use xlink:href="./assets/images/icons.svg#search"></use>
+      </svg>
+      <button class="btn btn--filter">
+        <svg class="icon--24">
+          <use xlink:href="./assets/images/icons.svg#filter"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="main-header__right">
+    <button class="btn btn--around">
+      <svg class="icon">
+        <use xlink:href="./assets/images/icons.svg#heart-dark"></use>
+      </svg>
+    </button>
+    <button class="btn btn--around">
+      <svg class="icon">
+        <use xlink:href="./assets/images/icons.svg#notification"></use>
+      </svg>
+      <div class="notification-alert"></div>
+    </button>
+    <button class="btn btn--around">
+      <svg class="icon">
+        <use xlink:href="./assets/images/icons.svg#setting-2"></use>
+      </svg>
+    </button>
+    <img
+      src="./assets/images/profile-1.png"
+      alt="Profile Image Man"
+      loading="lazy"
+      class="main-header__profile-img"
+    />
+  </div>
+</header>
+<!-- Header End -->
