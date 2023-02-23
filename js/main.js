@@ -101,10 +101,7 @@ function closeAllSelect(elmnt) {
   }
 }
 document.addEventListener("click", closeAllSelect);
-
-
-
-
+// 
 inputDataList.onfocus = function () {
   dataListOptions.style.display = "block";
   rotatingArrow.classList.toggle("rotating-arrow__active");
