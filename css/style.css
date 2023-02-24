@@ -805,6 +805,41 @@ li {
 .card__price-discount {
   text-decoration: line-through;
 }
+@media screen and (min-width: 640px) {
+  .card {
+    width: 240px;
+    height: 286px;
+  }
+  .card__header {
+    margin-bottom: 3.2rem;
+  }
+  .card__body {
+    margin-bottom: 2.8rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4.4rem;
+  }
+  .card__img {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .card__img img {
+    margin: 0;
+    width: 180px;
+    height: 56px;
+  }
+  .card__summary-wrapper {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .like {
+    width: 24px;
+    height: 24px;
+  }
+}
 @media screen and (max-width: 768px) {
   .card--secondary {
     width: 240px;
@@ -1264,7 +1299,7 @@ li {
 }
 /* Section Title End */
 /* Header Start*/
-.main-header{
+.main-header {
   width: 100%;
   background-color: var(--primary-color-white);
 }
@@ -1344,7 +1379,7 @@ li {
 /* Car Ads Start */
 .car-ads__container {
   width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 .car-ads {
   position: relative;
@@ -1480,10 +1515,13 @@ li {
 @media screen and (min-width: 640px) {
   .car-ads__container {
     margin-top: 3.2rem;
-    width: 640px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .slideshow-container {
+    width: 640px;
   }
   .car-ads {
     position: relative;
@@ -1500,6 +1538,8 @@ li {
   .btn--rental-car {
     width: 120px;
     height: 44px;
+    font-size: 1.6rem;
+    font-weight: 600;
   }
   .car-ads--secondary {
     background-image: url(/assets/images/ellipse-2-bg.png);
@@ -1517,11 +1557,6 @@ li {
   }
 }
 @media screen and (min-width: 1440px) {
-  .car-ads__container {
-    padding: 0 6.4rem;
-    width: 100%;
-    height: auto;
-  }
   .slideshow-container {
     margin: 0;
     width: 100%;
@@ -1574,7 +1609,7 @@ li {
   line-height: 1.9rem;
   color: var(--primary-color-white);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .titel__text--car-ads {
     width: 272px;
     height: 96px;
@@ -2016,16 +2051,29 @@ li {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
+  .main-footer__container {
+    gap: 3rem;
+  }
   .main-footer {
     background-color: var(--primary-color-white);
   }
+  .main-footer__container hr {
+    display: block;
+  }
+  .main-footer__links {
+    flex-direction: row-reverse;
+  }
+  .main-footer__rules {
+    width: 50%;
+    justify-content: flex-end;
+    gap: 6rem;
+  }
+}
+@media screen and (min-width: 768px) {
   .main-footer__container {
     justify-content: space-between;
     gap: 3.6rem;
-  }
-  .main-footer__container hr {
-    display: block;
   }
   .main-footer__into {
     width: auto;
@@ -2049,17 +2097,9 @@ li {
   .main-footer__items {
     gap: 6rem;
   }
-  .main-footer__links {
-    flex-direction: row-reverse;
-  }
   .main-footer__links a {
     font-size: 1.6rem;
     line-height: 2.4rem;
-  }
-  .main-footer__rules {
-    width: 50%;
-    justify-content: flex-end;
-    gap: 6rem;
   }
 }
 /* Footer End */
