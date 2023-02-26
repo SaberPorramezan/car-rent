@@ -1379,12 +1379,11 @@ li {
 /* Car Ads Start */
 .car-ads__container {
   width: 100%;
-  /* height: auto; */
 }
 .car-ads {
   position: relative;
   padding: 1.6rem 1.6rem 0.4rem 1.6rem;
-  width: 327px;
+  max-width: 327px;
   height: 232px;
   border-radius: 1rem;
   display: flex;
@@ -1392,6 +1391,7 @@ li {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1.6rem;
+  overflow: hidden;
 }
 .car-ads--secondary {
   background-color: var(--information-color-default);
@@ -1413,8 +1413,8 @@ li {
   bottom: 4px;
   left: 0;
   margin: auto;
-  width: auto;
-  height: auto;
+  width: 196px;
+  height: 56px;
 }
 .slideshow-container {
   position: relative;
@@ -1498,7 +1498,7 @@ li {
     bottom: 0;
     left: 0;
     margin: auto;
-    width: 327px;
+    max-width: 327px;
     height: auto;
   }
   .prev,
@@ -1514,19 +1514,19 @@ li {
 }
 @media screen and (min-width: 640px) {
   .car-ads__container {
-    margin-top: 3.2rem;
+    padding-bottom: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .slideshow-container {
-    width: 640px;
+    max-width: 640px;
   }
   .car-ads {
     position: relative;
     padding: 1.6rem 1.6rem 0.4rem 1.6rem;
-    width: 640px;
+    max-width: 640px;
     height: 360px;
     border-radius: 1rem;
     display: flex;
@@ -1546,30 +1546,26 @@ li {
   }
   .car-ads__img {
     width: 406px;
+    height: 116px;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .car-ads__img img {
-    width: 406px;
-    height: 116px;
-  }
 }
 @media screen and (min-width: 1440px) {
   .slideshow-container {
-    margin: 0;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 3.2rem;
   }
   .car-ads {
     position: relative;
     padding: 1.6rem 1.6rem 0.4rem 1.6rem;
-    max-width: 640px;
+    width: 640px;
     height: 360px;
     border-radius: 1rem;
     display: flex;
@@ -1591,34 +1587,35 @@ li {
   }
 }
 .title--car-ads {
+  max-width: 240px;
+  max-height: 70px;
   gap: 1.2rem;
+  overflow: hidden;
 }
 .titel__text--car-ads {
-  width: 240px;
-  height: 20px;
+  width: 100%;
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: var(--primary-color-white);
 }
 .titel__desc--car-ads {
-  width: 216px;
-  height: 38px;
+  width: 100%;
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.9rem;
   color: var(--primary-color-white);
 }
 @media screen and (min-width: 640px) {
+  .title--car-ads {
+    max-width: 284px;
+    max-height: 160px;
+  }
   .titel__text--car-ads {
-    width: 272px;
-    height: 96px;
     font-size: 3.2rem;
     line-height: 4.8rem;
   }
   .titel__desc--car-ads {
-    width: 284px;
-    height: 48px;
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
@@ -1707,7 +1704,7 @@ li {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 3.2rem;
+  gap: 5rem;
 }
 .pickup,
 .dropoff {
@@ -1767,6 +1764,9 @@ li {
   box-shadow: 15px 15px 50px 0px rgba(16, 50, 147, 0.32);
 }
 @media screen and (min-width: 640px) {
+  .delivery {
+    gap: 8rem;
+  }
   .pickup,
   .dropoff {
     padding: 2.4rem 4.8rem;
