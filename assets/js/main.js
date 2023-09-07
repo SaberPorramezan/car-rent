@@ -101,7 +101,7 @@ function closeAllSelect(elmnt) {
   }
 }
 document.addEventListener("click", closeAllSelect);
-// 
+//
 inputDataList.onfocus = function () {
   dataListOptions.style.display = "block";
   rotatingArrow.classList.toggle("rotating-arrow__active");
@@ -185,6 +185,3 @@ const navbar = document.querySelector(".nav");
 toggler.addEventListener("click", (e) => {
   navbar.classList.toggle("nav__expanded");
 });
-
-
-
